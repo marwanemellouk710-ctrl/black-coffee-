@@ -14,7 +14,6 @@ About me
 </span>
 <span style="color:
     blue ">
-</span>
 <hr>
 
 <h2> The automatic stage of obtaining a driving license </h2>
