@@ -158,5 +158,4 @@ About me
 </style>
         <hr>
 
-        <h1 
 <h2 style="color: yellow ;">All rights reserved to Marwan website  </h2>
