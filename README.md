@@ -14,9 +14,6 @@ About me
 </span>
 <span style="color:
     blue ">
-
-    <h6> From 30 to 49 minus 4 points </h6>
-    <h6> But if it is only 30 minus 2 points </h6>
 </span>
 <hr>
 
