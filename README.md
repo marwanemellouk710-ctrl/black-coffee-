@@ -22,7 +22,7 @@ About me
     issued by the administration, appropriate to the type of vehicle or group of vehicles he is driving.
     <hr>
     <p> Forty questions and answers </p>
-    </span>
+    
     <h6> a B driving license
 
         ---
