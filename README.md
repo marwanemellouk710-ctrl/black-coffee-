@@ -14,13 +14,6 @@ About me
 </span>
 <span style="color:
     blue ">
-    <p> Automatic violation from 700 dirhams to 1400 dirhams </p>
-
-    <p>Second class from 500 dirhams to 1000 dirhams </p>
-    <hr>
-    <h6> From 20 to 30 minus 2 points, but if it is only 20 0 points for exceeding the speed limit of 150 is equal to a
-        misdemeanor.forian </h6>
-
 
     <h6> From 30 to 49 minus 4 points </h6>
     <h6> But if it is only 30 minus 2 points </h6>
