@@ -6,16 +6,16 @@
 <hr>
 <h6>Written story📌<h6>
     <h2>Peace be upon you, I am Marwan Malouk. I am talking about a written story. I would like to inform you that there will be a live broadcast and the content will be on YouTube only.<h2>
-<h6>The story is valid without a period of time.<h6>
+<h6>The story is valid without a period of time⏰.<h6>
     <hr>
 About me 
  My name is Marwan Malouk from Morocco, residing in the United States of America. My profession is a content creator and influencer on social media. My work is a web programmer. This is my personal website, where I publish everything that concerns me, and even all updates are written. 
-<h6>Takbisa updated</h6>
+<h6>Takbisa updated☁️⬇️</h6>
 <h6>This is an update dated Wednesday, August 27, 2025, from programmer Marwan. </h6>
 <hr>
 <span style="color:
     green ">
-    Learn and teach Marwan's code 2025 
+    Learn and teach Marwan's code 2025 🚦⚠️🚫⛔📵🚳🚷
 </span>
 <span style="color:
     blue ">
