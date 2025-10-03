@@ -4,7 +4,7 @@
     information board
 </h1>
 <hr>
-<h6>Written story  <h6>
+<h6>Written story📌<h6>
     <h2>Peace be upon you, I am Marwan Malouk. I am talking about a written story. I would like to inform you that there will be a live broadcast and the content will be on YouTube only.<h2>
 <h6>The story is valid without a period of time.<h6>
     <hr>
