@@ -4,10 +4,16 @@
     information board📋
 </h1>
 <hr>
-<h6>Written story📌<h6>
-    <h2>This bot is called DuckBot and offers a service of my own. Type these commands to discover it.
-help /start/ https://t.me/Marwbbot<h2>
-<h6>The story is valid without a period of time⏰.<h6>
+<h6>post📌<h6>
+    <h2>This bot is called batbot and offers a service of my own. Type these commands to discover it.
+help /start/ link:https://t.me/Marwbbot<h2>
+
+<h6>A look at this bot and its development story<h6>
+
+<h2>This bot has a different story. Its code was developed and it took me about 12 hours to develop it. Suddenly, the internet was cut off and without realizing it, my mobile phone was broken. This is the first project for which a mobile phone was broken. It was a miracle. 😂💔</h2>
+
+
+<h6>Today's Takbisa was updated, Saturday, October 18, 2025. This date will always be remembered by us all, and we must remember that development requires a person without nervousness, who is cool-headed.💧 ⏰.<h6>
     <hr>
 About me 
  My name is Marwan Malouk from Morocco, residing in the United States of America. My profession is a content creator and influencer on social media. My work is a web programmer. This is my personal website, where I publish everything that concerns me, and even all updates are written. 
