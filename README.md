@@ -6,7 +6,7 @@
 <hr>
 <h6>post📌<h6>
     <h2>This bot is called batbot and offers a service of my own. Type these commands to discover it.
-help /start/ link:https://t.me/Marwbbot<h2>
+ link:https://t.me/Marwbbot<h2>
 
 <h6>A look at this bot and its development story<h6>
 
