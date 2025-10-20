@@ -34,7 +34,6 @@ About me
 <marquee divection="right"
     style="font-family: tahoma; font-size:18px; color :#007bff">
     Marwan Malouk's website is currently updated☁️⬇️. 
-</marquee>
 
-    <botton onclick= "b=document. body; b. style. background,=b.style.
-        backgronud?'':'#121212';b.style.color=b.style.color?'':'#fff';"style="position:fixed; top: 10px ; right:12px;index:9999; cursor:pointer;">☀️sunny</botton>☀️</button>
+
+
