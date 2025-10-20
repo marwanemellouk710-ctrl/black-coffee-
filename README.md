@@ -26,7 +26,6 @@ About me
 
 </style>
         <hr>
-    </style>
         <hr>
 
 <h2 style="color: yellow ;">All rights reserved to Marwan website  </h2>
