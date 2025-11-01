@@ -2,7 +2,7 @@
 <hr>
 <h6>Takbisa updated </h6>
 <marquee divection="right"
-    style="font-family: tahoma; font-size:18px; color :#007bff"> Marwan Malouk's website is currently updated☁️⬇️. 
+    style="font-family: tahoma; font-size:18px; color :#007bff"> Moroccan Sahara🇲🇦☕
 </marquee>
 
 <h1 style="color: red ;">
@@ -32,7 +32,7 @@ About me
      <hr> 
 <marquee divection="right"
     style="font-family: tahoma; font-size:18px; color :#007bff">
-    Marwan Malouk's website is currently updated☁️⬇️. 
+    Moroccan Sahara🇲🇦☕ 
 
 
 
