@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ar">
 <head>
@@ -60,25 +59,6 @@
             color: #ff6600;
         }
 
-        /* ---------- Dark Mode ---------- */
-        .dark-mode {
-            background-color: #121212;
-            color: #f5f5f5;
-        }
-
-        .dark-mode header {
-            background-color: #000;
-        }
-
-        .dark-mode footer {
-            background-color: #000;
-        }
-
-        .dark-mode #portfolio .project {
-            background-color: #1f1f1f;
-            color: #fff;
-        }
-
         .toggle-btn {
             background: none;
             border: 1px solid #ff6600;
@@ -122,27 +102,48 @@
         }
 
         #portfolio .project {
-            background-color: white;
-            border-radius: 10px;
+            border-radius: 12px;
             overflow: hidden;
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
             transition: transform 0.3s ease;
             position: relative;
-        }
-
-        #portfolio .project img {
-            width: 100%;
-            display: block;
+            color: white;
         }
 
         #portfolio .project:hover {
             transform: scale(1.05);
         }
 
+        #portfolio .project img {
+            width: 100%;
+            display: block;
+            border-bottom: 3px solid rgba(255,255,255,0.2);
+        }
+
         #portfolio .project h3 {
             padding: 15px;
             text-align: center;
-            color: #1a1a1a;
+        }
+
+        /* ---------- كل بطاقة بلون مختلف ---------- */
+        #portfolio .project:nth-child(1) {
+            background: linear-gradient(135deg, #ff7e5f, #feb47b);
+        }
+
+        #portfolio .project:nth-child(2) {
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+        }
+
+        #portfolio .project:nth-child(3) {
+            background: linear-gradient(135deg, #00b09b, #96c93d);
+        }
+
+        #portfolio .project:nth-child(4) {
+            background: linear-gradient(135deg, #ff512f, #dd2476);
+        }
+
+        #portfolio .project:nth-child(5) {
+            background: linear-gradient(135deg, #36d1dc, #5b86e5);
         }
 
         /* ---------- Download Icon ---------- */
@@ -150,7 +151,7 @@
             position: absolute;
             bottom: 10px;
             right: 10px;
-            background: rgba(0,0,0,0.6);
+            background: rgba(0,0,0,0.4);
             color: white;
             padding: 6px 10px;
             border-radius: 50%;
