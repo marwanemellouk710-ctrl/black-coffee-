@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ar">
 <head>
@@ -5,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>قهوة سوداء - بورتفوليو</title>
     <style>
-        /* ---------- Reset ---------- */
         * {
             margin: 0;
             padding: 0;
@@ -15,8 +15,9 @@
 
         body {
             line-height: 1.6;
-            background-color: #ffe6f0; /* خلفية وردية */
+            background-color: #ffe6f0;
             color: #333;
+            transition: background 0.5s, color 0.5s;
         }
 
         a {
@@ -24,7 +25,6 @@
             color: inherit;
         }
 
-        /* ---------- Navbar ---------- */
         header {
             background-color: #1a1a1a;
             color: white;
@@ -56,10 +56,22 @@
         }
 
         nav ul li a:hover {
-            color: #ff4081; /* لون وردي */
+            color: #ff4081;
         }
 
-        /* ---------- Sections ---------- */
+        .dark-mode {
+            background-color: #121212;
+            color: #f5f5f5;
+        }
+
+        .dark-mode header {
+            background-color: #000;
+        }
+
+        .dark-mode footer {
+            background-color: #000;
+        }
+
         section {
             padding: 80px 20px;
             max-width: 1000px;
@@ -72,14 +84,16 @@
             color: #1a1a1a;
         }
 
-        /* ---------- About ---------- */
+        .dark-mode h2 {
+            color: #fff;
+        }
+
         #about p {
             text-align: center;
             max-width: 700px;
             margin: auto;
         }
 
-        /* ---------- Portfolio ---------- */
         #portfolio .projects {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -94,9 +108,16 @@
             transition: transform 0.3s ease;
         }
 
+        .dark-mode #portfolio .project {
+            background-color: #1e1e1e;
+            box-shadow: 0 2px 8px rgba(255,255,255,0.1);
+        }
+
         #portfolio .project img {
             width: 100%;
             display: block;
+            height: 250px;
+            object-fit: cover;
         }
 
         #portfolio .project:hover {
@@ -109,7 +130,10 @@
             color: #1a1a1a;
         }
 
-        /* ---------- Contact ---------- */
+        .dark-mode #portfolio .project h3 {
+            color: #fff;
+        }
+
         #contact form {
             max-width: 500px;
             margin: auto;
@@ -139,7 +163,6 @@
             background-color: #ff4081;
         }
 
-        /* ---------- Footer ---------- */
         footer {
             text-align: center;
             padding: 20px;
@@ -147,7 +170,23 @@
             color: white;
         }
 
-        /* ---------- Responsive ---------- */
+        #darkToggle {
+            background: none;
+            border: 1px solid #fff;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            color: #fff;
+            cursor: pointer;
+            font-size: 1.2rem;
+            transition: 0.3s;
+        }
+
+        #darkToggle:hover {
+            background-color: #ff4081;
+            border-color: #ff4081;
+        }
+
         @media (max-width: 600px) {
             nav ul {
                 flex-direction: column;
@@ -171,39 +210,44 @@
                 <li><a href="#portfolio">أعمالي</a></li>
                 <li><a href="#contact">اتصل بي</a></li>
             </ul>
+            <button id="darkToggle">🌙</button>
         </nav>
     </header>
 
-    <!-- About Section -->
+    <!-- About -->
     <section id="about">
         <h2>عنّي</h2>
         <p>مرحباً! أنا Marwane Mellouk، مطور ومصمم مواقع شغوف بابتكار تجارب رقمية مميزة. أحب تعلم التقنيات الجديدة وتحويل الأفكار إلى مشاريع ملموسة.</p>
     </section>
 
-    <!-- Portfolio Section -->
+    <!-- Portfolio -->
     <section id="portfolio">
         <h2>أعمالي</h2>
         <div class="projects">
             <div class="project">
-                <img src="https://picsum.photos/400/250?random=1" alt="مشروع 1">
+                <img src="IMAGE1.jpg" alt="مشروع 1">
                 <h3>مشروع 1</h3>
             </div>
             <div class="project">
-                <img src="https://picsum.photos/400/250?random=2" alt="مشروع 2">
+                <img src="IMAGE2.jpg" alt="مشروع 2">
                 <h3>مشروع 2</h3>
             </div>
             <div class="project">
-                <img src="https://picsum.photos/400/250?random=3" alt="مشروع 3">
+                <img src="IMAGE3.jpg" alt="مشروع 3">
                 <h3>مشروع 3</h3>
             </div>
             <div class="project">
-                <img src="https://picsum.photos/400/250?random=4" alt="مشروع 4">
+                <img src="IMAGE4.jpg" alt="مشروع 4">
                 <h3>مشروع 4</h3>
+            </div>
+            <div class="project">
+                <img src="IMAGE5.jpg" alt="مشروع 5">
+                <h3>مشروع 5</h3>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Contact -->
     <section id="contact">
         <h2>اتصل بي</h2>
         <form>
@@ -218,6 +262,13 @@
     <footer>
         &copy; 2025 قهوة سوداء | جميع الحقوق محفوظة
     </footer>
+
+    <script>
+        const toggle = document.getElementById('darkToggle');
+        toggle.onclick = () => {
+            document.body.classList.toggle('dark-mode');
+        };
+    </script>
 
 </body>
 </html>
