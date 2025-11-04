@@ -50,12 +50,14 @@
     }
 
     nav ul li a {
-        display: inline-block;
-        padding: 8px 15px;
+        display: block;
+        padding: 10px 20px;
         background-color: #ff4081;
         color: white;
         border-radius: 5px;
         font-weight: bold;
+        text-align: center;
+        width: 120px; /* أزرار مستقيمة */
         transition: background 0.3s;
     }
 
@@ -63,13 +65,12 @@
         background-color: #e03570;
     }
 
-    /* ---------- Dark Mode Button ---------- */
     #darkModeToggle {
         cursor: pointer;
         background-color: #333;
         border: none;
         border-radius: 5px;
-        padding: 8px 12px;
+        padding: 10px 15px;
         color: white;
         font-size: 1rem;
         margin-left: 15px;
@@ -116,6 +117,7 @@
         display: block;
         height: 200px;
         object-fit: cover;
+        background-color: #ddd;
     }
 
     #portfolio .project:hover {
@@ -207,7 +209,8 @@
 
     @media (max-width: 600px) {
         nav ul { flex-direction: column; margin-top: 10px; }
-        nav ul li { margin-left: 0; margin-top: 10px; }
+        nav ul li { margin-left: 0; margin-top: 10px; width: 100%; }
+        nav ul li a { width: 100%; }
     }
 </style>
 </head>
@@ -235,20 +238,21 @@
 <section id="portfolio">
     <h2>أعمالي</h2>
     <div class="projects">
+        <!-- صور افتراضية للبرمجة -->
         <div class="project">
-            <img src="https://images.unsplash.com/photo-1581093588401-00f3a5d83c7b?auto=format&fit=crop&w=400&q=80" alt="مشروع برمجي 1">
+            <img src="https://via.placeholder.com/400x200?text=Code+1" alt="مشروع برمجي 1">
             <h3>مشروع برمجي 1</h3>
         </div>
         <div class="project">
-            <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981d?auto=format&fit=crop&w=400&q=80" alt="مشروع برمجي 2">
+            <img src="https://via.placeholder.com/400x200?text=Code+2" alt="مشروع برمجي 2">
             <h3>مشروع برمجي 2</h3>
         </div>
         <div class="project">
-            <img src="https://images.unsplash.com/photo-1581092795360-6f2a9e6db7db?auto=format&fit=crop&w=400&q=80" alt="مشروع برمجي 3">
+            <img src="https://via.placeholder.com/400x200?text=Code+3" alt="مشروع برمجي 3">
             <h3>مشروع برمجي 3</h3>
         </div>
         <div class="project">
-            <img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?auto=format&fit=crop&w=400&q=80" alt="مشروع برمجي 4">
+            <img src="https://via.placeholder.com/400x200?text=Code+4" alt="مشروع برمجي 4">
             <h3>مشروع برمجي 4</h3>
         </div>
     </div>
