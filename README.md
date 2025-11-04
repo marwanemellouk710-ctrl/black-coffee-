@@ -7,7 +7,6 @@
 </a>
 <hr>
 <h1>Profile </h1>
-    <img src="ff.jpg" alt>
         
 <hr>
 <h6>Takbisa updated ☁️⬇️</h6>
