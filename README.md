@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ar">
 <head>
@@ -22,7 +21,7 @@
 
     a { text-decoration: none; color: inherit; }
 
-    /* ---------- Navbar ---------- */
+    /* Navbar */
     header {
         background-color: #1a1a1a;
         padding: 10px 20px;
@@ -57,7 +56,7 @@
         border-radius: 5px;
         font-weight: bold;
         text-align: center;
-        width: 120px; /* أزرار مستقيمة */
+        width: 120px;
         transition: background 0.3s;
     }
 
@@ -98,13 +97,16 @@
         margin: auto;
     }
 
+    /* Portfolio horizontal cards */
     #portfolio .projects {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        display: flex;
+        flex-direction: column;
         gap: 20px;
     }
 
     #portfolio .project {
+        display: flex;
+        align-items: center;
         background-color: white;
         border-radius: 10px;
         overflow: hidden;
@@ -113,52 +115,20 @@
     }
 
     #portfolio .project img {
-        width: 100%;
-        display: block;
+        width: 200px;
         height: 200px;
         object-fit: cover;
-        background-color: #ddd;
-    }
-
-    #portfolio .project:hover {
-        transform: scale(1.05);
+        flex-shrink: 0;
     }
 
     #portfolio .project h3 {
-        padding: 15px;
-        text-align: center;
+        padding: 20px;
         color: #1a1a1a;
+        font-size: 1.2rem;
     }
 
-    #contact form {
-        max-width: 500px;
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-    }
-
-    #contact input, #contact textarea {
-        padding: 10px;
-        margin-bottom: 15px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        font-size: 1rem;
-        background-color: #fff;
-    }
-
-    #contact button {
-        padding: 10px;
-        background-color: #ff4081;
-        color: white;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        font-size: 1rem;
-        transition: background 0.3s;
-    }
-
-    #contact button:hover {
-        background-color: #e03570;
+    #portfolio .project:hover {
+        transform: scale(1.03);
     }
 
     footer {
@@ -168,7 +138,7 @@
         color: white;
     }
 
-    /* ---------- Dark Mode ---------- */
+    /* Dark Mode */
     body.dark {
         background-color: #121212;
         color: #e0e0e0;
@@ -192,29 +162,22 @@
         color: #e0e0e0;
     }
 
-    body.dark #contact input, body.dark #contact textarea {
-        background-color: #333;
-        border: 1px solid #555;
-        color: #fff;
-    }
+    @media (max-width: 768px) {
+        #portfolio .project {
+            flex-direction: column;
+            text-align: center;
+        }
 
-    body.dark #contact button {
-        background-color: #ff4081;
-        color: white;
-    }
-
-    body.dark #contact button:hover {
-        background-color: #e03570;
-    }
-
-    @media (max-width: 600px) {
-        nav ul { flex-direction: column; margin-top: 10px; }
-        nav ul li { margin-left: 0; margin-top: 10px; width: 100%; }
-        nav ul li a { width: 100%; }
+        #portfolio .project img {
+            width: 100%;
+            height: 200px;
+        }
     }
 </style>
 </head>
 <body>
+
+<audio id="welcomeAudio" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" autoplay></audio>
 
 <header>
     <div class="logo">قهوة سوداء</div>
@@ -223,7 +186,6 @@
             <ul>
                 <li><a href="#about">عنّي</a></li>
                 <li><a href="#portfolio">أعمالي</a></li>
-                <li><a href="#contact">اتصل بي</a></li>
             </ul>
         </nav>
         <button id="darkModeToggle">🌙</button>
@@ -238,34 +200,24 @@
 <section id="portfolio">
     <h2>أعمالي</h2>
     <div class="projects">
-        <!-- صور افتراضية للبرمجة -->
+        <!-- بطاقات أفقية بصور افتراضية للبرمجة -->
         <div class="project">
-            <img src="https://via.placeholder.com/400x200?text=Code+1" alt="مشروع برمجي 1">
+            <img src="https://via.placeholder.com/200x200?text=💻+Code+1" alt="مشروع 1">
             <h3>مشروع برمجي 1</h3>
         </div>
         <div class="project">
-            <img src="https://via.placeholder.com/400x200?text=Code+2" alt="مشروع برمجي 2">
+            <img src="https://via.placeholder.com/200x200?text=🖥️+Code+2" alt="مشروع 2">
             <h3>مشروع برمجي 2</h3>
         </div>
         <div class="project">
-            <img src="https://via.placeholder.com/400x200?text=Code+3" alt="مشروع برمجي 3">
+            <img src="https://via.placeholder.com/200x200?text=📱+Code+3" alt="مشروع 3">
             <h3>مشروع برمجي 3</h3>
         </div>
         <div class="project">
-            <img src="https://via.placeholder.com/400x200?text=Code+4" alt="مشروع برمجي 4">
+            <img src="https://via.placeholder.com/200x200?text=⚙️+Code+4" alt="مشروع 4">
             <h3>مشروع برمجي 4</h3>
         </div>
     </div>
-</section>
-
-<section id="contact">
-    <h2>اتصل بي</h2>
-    <form>
-        <input type="text" placeholder="الاسم" required>
-        <input type="email" placeholder="البريد الإلكتروني" required>
-        <textarea rows="5" placeholder="رسالتك" required></textarea>
-        <button type="submit">أرسل</button>
-    </form>
 </section>
 
 <footer>
@@ -273,10 +225,17 @@
 </footer>
 
 <script>
+    // Dark mode toggle
     const toggleBtn = document.getElementById('darkModeToggle');
     toggleBtn.addEventListener('click', () => {
         document.body.classList.toggle('dark');
         toggleBtn.textContent = document.body.classList.contains('dark') ? '☀️' : '🌙';
+    });
+
+    // Play welcome audio automatically
+    window.addEventListener('load', () => {
+        const audio = document.getElementById('welcomeAudio');
+        audio.play().catch(e => console.log("Autoplay prevented"));
     });
 </script>
 
