@@ -183,7 +183,7 @@
 
     <!-- Portfolio Section -->
     <section id="portfolio">
-        <h2>صور تتغير كلما تعود ان تدخل </h2>
+        <h2>صور تتغير</h2>
         <div class="projects">
             <div class="project">
                 <img src="https://picsum.photos/400/250?random=1" alt="مشروع 1">
