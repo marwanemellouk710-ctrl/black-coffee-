@@ -17,7 +17,6 @@
             line-height: 1.6;
             background-color: #f5f5f5;
             color: #333;
-            transition: background 0.4s, color 0.4s;
         }
 
         a {
@@ -59,21 +58,6 @@
             color: #ff6600;
         }
 
-        .toggle-btn {
-            background: none;
-            border: 1px solid #ff6600;
-            color: #ff6600;
-            padding: 5px 10px;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background 0.3s;
-        }
-
-        .toggle-btn:hover {
-            background: #ff6600;
-            color: #fff;
-        }
-
         /* ---------- Sections ---------- */
         section {
             padding: 80px 20px;
@@ -102,66 +86,26 @@
         }
 
         #portfolio .project {
-            border-radius: 12px;
+            background-color: white;
+            border-radius: 10px;
             overflow: hidden;
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
             transition: transform 0.3s ease;
-            position: relative;
-            color: white;
+        }
+
+        #portfolio .project img {
+            width: 100%;
+            display: block;
         }
 
         #portfolio .project:hover {
             transform: scale(1.05);
         }
 
-        #portfolio .project img {
-            width: 100%;
-            display: block;
-            border-bottom: 3px solid rgba(255,255,255,0.2);
-        }
-
         #portfolio .project h3 {
             padding: 15px;
             text-align: center;
-        }
-
-        /* ---------- كل بطاقة بلون مختلف ---------- */
-        #portfolio .project:nth-child(1) {
-            background: linear-gradient(135deg, #ff7e5f, #feb47b);
-        }
-
-        #portfolio .project:nth-child(2) {
-            background: linear-gradient(135deg, #6a11cb, #2575fc);
-        }
-
-        #portfolio .project:nth-child(3) {
-            background: linear-gradient(135deg, #00b09b, #96c93d);
-        }
-
-        #portfolio .project:nth-child(4) {
-            background: linear-gradient(135deg, #ff512f, #dd2476);
-        }
-
-        #portfolio .project:nth-child(5) {
-            background: linear-gradient(135deg, #36d1dc, #5b86e5);
-        }
-
-        /* ---------- Download Icon ---------- */
-        .download-icon {
-            position: absolute;
-            bottom: 10px;
-            right: 10px;
-            background: rgba(0,0,0,0.4);
-            color: white;
-            padding: 6px 10px;
-            border-radius: 50%;
-            font-size: 18px;
-            cursor: pointer;
-            transition: background 0.3s;
-        }
-
-        .download-icon:hover {
-            background: #ff6600;
+            color: #1a1a1a;
         }
 
         /* ---------- Contact ---------- */
@@ -226,7 +170,6 @@
                 <li><a href="#portfolio">أعمالي</a></li>
                 <li><a href="#contact">اتصل بي</a></li>
             </ul>
-            <button class="toggle-btn" onclick="toggleDarkMode()">🌙</button>
         </nav>
     </header>
 
@@ -241,29 +184,16 @@
         <h2>أعمالي</h2>
         <div class="projects">
             <div class="project">
-                <img src="IMAGE1.jpg" alt="مشروع 1">
+                <img src="https://via.placeholder.com/400x250" alt="مشروع 1">
                 <h3>مشروع 1</h3>
-                <a href="IMAGE1.jpg" download class="download-icon">⬇️</a>
             </div>
             <div class="project">
-                <img src="IMAGE2.jpg" alt="مشروع 2">
+                <img src="https://via.placeholder.com/400x250" alt="مشروع 2">
                 <h3>مشروع 2</h3>
-                <a href="IMAGE2.jpg" download class="download-icon">⬇️</a>
             </div>
             <div class="project">
-                <img src="IMAGE3.jpg" alt="مشروع 3">
+                <img src="https://via.placeholder.com/400x250" alt="مشروع 3">
                 <h3>مشروع 3</h3>
-                <a href="IMAGE3.jpg" download class="download-icon">⬇️</a>
-            </div>
-            <div class="project">
-                <img src="IMAGE4.jpg" alt="مشروع 4">
-                <h3>مشروع 4</h3>
-                <a href="IMAGE4.jpg" download class="download-icon">⬇️</a>
-            </div>
-            <div class="project">
-                <img src="IMAGE5.jpg" alt="مشروع 5">
-                <h3>مشروع 5</h3>
-                <a href="IMAGE5.jpg" download class="download-icon">⬇️</a>
             </div>
         </div>
     </section>
@@ -284,12 +214,5 @@
         &copy; 2025 Marwane Mellouk | جميع الحقوق محفوظة
     </footer>
 
-    <script>
-        function toggleDarkMode() {
-            document.body.classList.toggle("dark-mode");
-            const btn = document.querySelector(".toggle-btn");
-            btn.textContent = document.body.classList.contains("dark-mode") ? "☀️" : "🌙";
-        }
-    </script>
 </body>
 </html>
