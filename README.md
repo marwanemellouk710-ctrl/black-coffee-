@@ -1,21 +1,22 @@
+
 <!DOCTYPE html>
 <html lang="ar">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>بورتفوليو Marwane Mellouk</title>
+    <title>قهوة سوداء - بورتفوليو</title>
     <style>
         /* ---------- Reset ---------- */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
         }
 
         body {
             line-height: 1.6;
-            background-color: #f5f5f5;
+            background-color: #ffe6f0; /* خلفية وردية */
             color: #333;
         }
 
@@ -41,8 +42,9 @@
         }
 
         nav .logo {
-            font-size: 1.5rem;
+            font-size: 1.8rem;
             font-weight: bold;
+            color: #fff;
         }
 
         nav ul {
@@ -55,7 +57,7 @@
         }
 
         nav ul li a:hover {
-            color: #ff6600;
+            color: #ff4081; /* لون وردي */
         }
 
         /* ---------- Sections ---------- */
@@ -135,7 +137,7 @@
         }
 
         #contact button:hover {
-            background-color: #ff6600;
+            background-color: #ff4081;
         }
 
         /* ---------- Footer ---------- */
@@ -164,7 +166,7 @@
     <!-- Navbar -->
     <header>
         <nav>
-            <div class="logo">Marwane Mellouk</div>
+            <div class="logo">قهوة سوداء</div>
             <ul>
                 <li><a href="#about">عنّي</a></li>
                 <li><a href="#portfolio">أعمالي</a></li>
@@ -184,16 +186,20 @@
         <h2>أعمالي</h2>
         <div class="projects">
             <div class="project">
-                <img src="https://via.placeholder.com/400x250" alt="مشروع 1">
+                <img src="https://picsum.photos/400/250?random=1" alt="مشروع 1">
                 <h3>مشروع 1</h3>
             </div>
             <div class="project">
-                <img src="https://via.placeholder.com/400x250" alt="مشروع 2">
+                <img src="https://picsum.photos/400/250?random=2" alt="مشروع 2">
                 <h3>مشروع 2</h3>
             </div>
             <div class="project">
-                <img src="https://via.placeholder.com/400x250" alt="مشروع 3">
+                <img src="https://picsum.photos/400/250?random=3" alt="مشروع 3">
                 <h3>مشروع 3</h3>
+            </div>
+            <div class="project">
+                <img src="https://picsum.photos/400/250?random=4" alt="مشروع 4">
+                <h3>مشروع 4</h3>
             </div>
         </div>
     </section>
@@ -211,7 +217,7 @@
 
     <!-- Footer -->
     <footer>
-        &copy; 2025 Marwane Mellouk | جميع الحقوق محفوظة
+        &copy; 2025 قهوة سوداء | جميع الحقوق محفوظة
     </footer>
 
 </body>
