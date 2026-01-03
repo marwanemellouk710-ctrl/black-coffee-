@@ -28,7 +28,7 @@ About me
 
 <style>
     body {
-        background-color: Gray   ;
+        background-color: purple    ;
     }
 
 </style>
