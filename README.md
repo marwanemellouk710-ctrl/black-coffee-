@@ -28,7 +28,7 @@ About me
 
 <style>
     body {
-        background-color: rosy   ;
+        background-color: pink   ;
     }
 
 </style>
