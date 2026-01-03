@@ -28,7 +28,7 @@ About me
 
 <style>
     body {
-        background-color: pink ;
+        background-color: green ;
     }
 
 </style>
