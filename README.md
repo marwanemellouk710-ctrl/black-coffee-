@@ -28,7 +28,7 @@ About me
 
 <style>
     body {
-        background-color: syphilis    ;
+        background-color: purple     ;
     }
 
 </style>
