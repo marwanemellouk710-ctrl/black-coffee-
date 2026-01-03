@@ -28,7 +28,7 @@ About me
 
 <style>
     body {
-        background-color: Golden    ;
+        background-color: syphilis    ;
     }
 
 </style>
