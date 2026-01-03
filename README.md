@@ -28,7 +28,7 @@ About me
 
 <style>
     body {
-        background-color: green ;
+        background-color: ashen ;
     }
 
 </style>
