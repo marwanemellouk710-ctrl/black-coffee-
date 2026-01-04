@@ -19,6 +19,7 @@
 <h6>Takbisa updated ☁️⬇️</h6>
 <h6>Number of views (31) ♥︎
 <hr>
+<h6>Writer Marwan✎</h6>
 <h1>أ Anger is a disease ☀︎</h1>
 <h2>There is no cure for this neurological disease. If you suffer from it, you will feel something abnormal; you will break everything in front of you and hate yourself.>Th2>
 <h6>post✎<h6>
