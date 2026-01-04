@@ -3,7 +3,7 @@
 <hr>
 <h6>Takbisa updated ☁️⬇️</h6>
 <h6>Number of views on the site (1000)
-<h6>Website modification date: 4/1/2026</h6>
+<h6>Date modified: 4/1/2026✎>Date
 <h1>
     <hr>
 <marquee divection="right"
