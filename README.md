@@ -3,6 +3,7 @@
 <hr>
 <h6>Takbisa updated ☁️⬇️</h6>
 <h6>Number of views on the site (1000)
+<h6>Date of last site modification 4/1/2026>date
 <h1>
     <hr>
 <marquee divection="right"
@@ -18,7 +19,8 @@
 <h6>Takbisa updated ☁️⬇️</h6>
 <h6>Number of views (31) ♥︎
 <hr>
-
+<h1>أ Anger is a disease ☀︎</h1>
+<h2>There is no cure for this neurological disease. If you suffer from it, you will feel something abnormal; you will break everything in front of you and hate yourself.>Th2>
 <h6>post✎<h6>
     <h2>This is my channel on Telegram  There is a bot in it 🤖https://t.me/Developers230<h2>
 
@@ -36,7 +38,7 @@
         <hr>
         <hr>
 
-<h2 style="color: yellow ;">All rights reserved to Marwan website  </h2>
+<h2 style="color: yellow ;">All rights reserved to Marwan website 2026 </h2>
      <hr> 
 <marquee divection="right"
     style="font-family: tahoma; font-size:18px; color :#007bff">
