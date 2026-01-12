@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Marwane Mellouk - Black Coffee</title>
 
-<!-- استدعاء مكتبة Font Awesome للأيقونات -->
+<!-- Font Awesome للأيقونات -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-a7VgX9mXzqZ/w+PoFqD2x7FG9U64nKw6l7v6bZ9+T7pG9B8LxN5bD6kD3B3Y2kRkaRbF+JQkOZL2R3vRKwD8g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 <style>
@@ -17,7 +16,7 @@
         transition: background-color 0.5s, color 0.5s;
     }
 
-    /* Light & Dark Mode */
+    /* الوضع الليلي والنهاري */
     body.light {
         background-color: #f5f5f5;
         color: #000;
@@ -49,8 +48,8 @@
         transform: scale(1.1);
     }
 
-    /* صورة دائرية في الأعلى */
-    .profile-img {
+    /* صورة دائرية */
+    .profile-img, .circular-img {
         display: block;
         margin: 20px auto;
         width: 150px;
@@ -59,9 +58,14 @@
         object-fit: cover;
         border: 4px solid #fff;
         box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        transition: transform 0.3s;
     }
 
-    /* تنسيق البطاقات */
+    .profile-img:hover, .circular-img:hover {
+        transform: scale(1.05);
+    }
+
+    /* البطاقات */
     .card {
         background-color: rgba(255,255,255,0.9);
         color: #000;
@@ -100,7 +104,7 @@
         margin-bottom: 20px;
     }
 
-    /* أزرار احترافية */
+    /* أزرار */
     .btn {
         display: inline-block;
         padding: 10px 20px;
@@ -128,6 +132,10 @@
         text-decoration: underline;
     }
 
+    /* أيقونات في الوضع الليلي */
+    body.dark i {
+        color: #ffd700; /* أيقونات ذهبية واضحة في الليل */
+    }
 </style>
 </head>
 <body class="light">
@@ -135,8 +143,11 @@
 <!-- زر تبديل الوضع -->
 <button class="toggle-btn" id="modeBtn"><i class="fas fa-moon"></i></button>
 
-<!-- صورة دائرية -->
+<!-- صورة شخصية -->
 <img src="profile.jpg" alt="Marwane Mellouk" class="profile-img">
+
+<!-- صورة إضافية دائرية -->
+<img src="ff.jpg" alt="ff" class="circular-img">
 
 <marquee direction="right">Moroccan Sahara🇲🇦☕</marquee>
 
@@ -184,17 +195,15 @@
 </div>
 
 <marquee direction="right">Moroccan Sahara🇲🇦☕</marquee>
-<img src="ff.jpg" alt="ff" style="display:block; margin:auto; width:200px; border-radius:20px;">
 
 <script>
     const modeBtn = document.getElementById('modeBtn');
     const icon = modeBtn.querySelector('i');
 
-    // تبديل الوضع بين Light و Dark
+    // تبديل الوضع
     modeBtn.addEventListener('click', () => {
         document.body.classList.toggle('dark');
         document.body.classList.toggle('light');
-        // تغيير الأيقونة
         if(document.body.classList.contains('dark')) {
             icon.classList.remove('fa-moon');
             icon.classList.add('fa-sun');
