@@ -6,6 +6,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Marwane Mellouk - Black Coffee</title>
 
+<!-- استدعاء مكتبة Font Awesome للأيقونات -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-a7VgX9mXzqZ/w+PoFqD2x7FG9U64nKw6l7v6bZ9+T7pG9B8LxN5bD6kD3B3Y2kRkaRbF+JQkOZL2R3vRKwD8g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 <style>
     body {
         font-family: Tahoma, sans-serif;
@@ -35,13 +38,15 @@
         background-color: #007bff;
         color: #fff;
         border: none;
-        border-radius: 5px;
-        font-weight: bold;
-        transition: background-color 0.3s;
+        border-radius: 50%;
+        font-size: 20px;
+        transition: background-color 0.3s, transform 0.3s;
+        z-index: 1000;
     }
 
     .toggle-btn:hover {
         background-color: #0056b3;
+        transform: scale(1.1);
     }
 
     /* صورة دائرية في الأعلى */
@@ -128,7 +133,7 @@
 <body class="light">
 
 <!-- زر تبديل الوضع -->
-<button class="toggle-btn" onclick="toggleMode()">🌙 / ☀️</button>
+<button class="toggle-btn" id="modeBtn"><i class="fas fa-moon"></i></button>
 
 <!-- صورة دائرية -->
 <img src="profile.jpg" alt="Marwane Mellouk" class="profile-img">
@@ -182,20 +187,35 @@
 <img src="ff.jpg" alt="ff" style="display:block; margin:auto; width:200px; border-radius:20px;">
 
 <script>
+    const modeBtn = document.getElementById('modeBtn');
+    const icon = modeBtn.querySelector('i');
+
     // تبديل الوضع بين Light و Dark
-    function toggleMode() {
+    modeBtn.addEventListener('click', () => {
         document.body.classList.toggle('dark');
         document.body.classList.toggle('light');
-    }
+        // تغيير الأيقونة
+        if(document.body.classList.contains('dark')) {
+            icon.classList.remove('fa-moon');
+            icon.classList.add('fa-sun');
+        } else {
+            icon.classList.remove('fa-sun');
+            icon.classList.add('fa-moon');
+        }
+    });
 
     // الوضع التلقائي حسب الوقت
     const hour = new Date().getHours();
     if(hour >= 18 || hour < 6) {
         document.body.classList.add('dark');
         document.body.classList.remove('light');
+        icon.classList.remove('fa-moon');
+        icon.classList.add('fa-sun');
     } else {
         document.body.classList.add('light');
         document.body.classList.remove('dark');
+        icon.classList.remove('fa-sun');
+        icon.classList.add('fa-moon');
     }
 </script>
 
