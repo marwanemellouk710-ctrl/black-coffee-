@@ -49,7 +49,7 @@
     }
 
     /* صورة دائرية */
-    .profile-img, .circular-img {
+    .circular-img {
         display: block;
         margin: 20px auto;
         width: 150px;
@@ -61,7 +61,7 @@
         transition: transform 0.3s;
     }
 
-    .profile-img:hover, .circular-img:hover {
+    .circular-img:hover {
         transform: scale(1.05);
     }
 
@@ -131,22 +131,14 @@
     a:hover {
         text-decoration: underline;
     }
-
-    /* أيقونات في الوضع الليلي */
-    body.dark i {
-        color: #ffd700; /* أيقونات ذهبية واضحة في الليل */
-    }
 </style>
 </head>
 <body class="light">
 
 <!-- زر تبديل الوضع -->
-<button class="toggle-btn" id="modeBtn"><i class="fas fa-moon"></i></button>
+<button class="toggle-btn" id="modeBtn"><i class="fas fa-sun"></i></button>
 
-<!-- صورة شخصية -->
-<img src="profile.jpg" alt="Marwane Mellouk" class="profile-img">
-
-<!-- صورة إضافية دائرية -->
+<!-- صورة دائرية -->
 <img src="ff.jpg" alt="ff" class="circular-img">
 
 <marquee direction="right">Moroccan Sahara🇲🇦☕</marquee>
@@ -200,16 +192,18 @@
     const modeBtn = document.getElementById('modeBtn');
     const icon = modeBtn.querySelector('i');
 
-    // تبديل الوضع
+    // تبديل الوضع الليلي والنهاري
     modeBtn.addEventListener('click', () => {
         document.body.classList.toggle('dark');
         document.body.classList.toggle('light');
+
+        // تغيير الأيقونة حسب الوضع
         if(document.body.classList.contains('dark')) {
-            icon.classList.remove('fa-moon');
-            icon.classList.add('fa-sun');
-        } else {
             icon.classList.remove('fa-sun');
-            icon.classList.add('fa-moon');
+            icon.classList.add('fa-moon'); // القمر للوضع الليلي
+        } else {
+            icon.classList.remove('fa-moon');
+            icon.classList.add('fa-sun'); // الشمس للوضع النهاري
         }
     });
 
@@ -218,13 +212,13 @@
     if(hour >= 18 || hour < 6) {
         document.body.classList.add('dark');
         document.body.classList.remove('light');
-        icon.classList.remove('fa-moon');
-        icon.classList.add('fa-sun');
+        icon.classList.remove('fa-sun');
+        icon.classList.add('fa-moon');
     } else {
         document.body.classList.add('light');
         document.body.classList.remove('dark');
-        icon.classList.remove('fa-sun');
-        icon.classList.add('fa-moon');
+        icon.classList.remove('fa-moon');
+        icon.classList.add('fa-sun');
     }
 </script>
 
